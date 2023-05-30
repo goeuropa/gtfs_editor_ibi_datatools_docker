@@ -14,7 +14,7 @@ RUN npm i -g serve
 #RUN git clone -b 'dev' --single-branch https://github.com/wkulesza/datatools-ui.git /opt/datatools-ui
 
 ADD "https://www.random.org/cgi-bin/randbyte?nbytes=10&format=h" skipcache
-RUN git clone -b 'mapa' https://github.com/goeuropa/datatools-ui.git /opt/datatools-ui
+RUN git clone -b 'devmerge' https://github.com/goeuropa/datatools-ui.git /opt/datatools-ui
 
 WORKDIR /opt/datatools-ui
 
@@ -33,3 +33,4 @@ EXPOSE 9966
 
 CMD envsubst < /config/env.yml > /opt/datatools-ui/configurations/default/env.yml && \
     $(npm bin)/mastarm build --env production && serve -p 9966
+
