@@ -1,0 +1,4 @@
+# See https://help.github.com/articles/about-codeowners/
+
+# An IBI Group OTP/Data Tools member is required to approve PR merges
+* @ibi-group/otp-data-tools

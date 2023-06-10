@@ -1,0 +1,43 @@
+{
+  "hints": { "visited_nodes.average": "10.0", "visited_nodes.sum": "10" },
+  "info": {
+    "copyrights": ["GraphHopper", "OpenStreetMap contributors"],
+    "took": 1
+  },
+  "paths": [
+    {
+      "distance": 426.705,
+      "weight": 27.735793,
+      "time": 21333,
+      "transfers": 0,
+      "points_encoded": true,
+      "bbox": [-77.923058, 42.092351, -77.922526, 42.096168],
+      "points": "ed|_GxfrzMuG^cNhA",
+      "instructions": [
+        {
+          "distance": 426.705,
+          "heading": 355.28,
+          "sign": 0,
+          "interval": [0, 2],
+          "text": "Continue onto Stannards Road, NY 19",
+          "time": 21333,
+          "street_name": "Stannards Road, NY 19"
+        },
+        {
+          "distance": 0.0,
+          "sign": 4,
+          "last_heading": 353.3201539453734,
+          "interval": [2, 2],
+          "text": "Arrive at destination",
+          "time": 0,
+          "street_name": ""
+        }
+      ],
+      "legs": [],
+      "details": {},
+      "ascend": 2.7185211181640625,
+      "descend": 0.20001220703125,
+      "snapped_waypoints": "ed|_GxfrzMyVhB"
+    }
+  ]
+}

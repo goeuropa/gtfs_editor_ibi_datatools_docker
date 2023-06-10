@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`manager > util > transform > getTransformationName > should return fully-replaced label for ReplaceFileFromStringTranformation 1`] = `"Replace feed_info table from below text"`;
+
+exports[`manager > util > transform > getTransformationName > should return half-replaced label for ReplaceFileFromStringTranformation 1`] = `"Replace [choose table] from below text"`;
+
+exports[`manager > util > transform > getTransformationName > should return name for ReplaceFileFromStringTranformation 1`] = `"Replace file from string transformation"`;
+
+exports[`manager > util > transform > getTransformationName > should return unreplaced label for ReplaceFileFromStringTranformation 1`] = `"Replace [choose table] from [choose file]"`;

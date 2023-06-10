@@ -1,0 +1,730 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`manager > selectors > getActiveProject should get the project 1`] = `
+Object {
+  "autoFetchFeeds": false,
+  "autoFetchHour": 0,
+  "autoFetchMinute": 0,
+  "bounds": null,
+  "defaultTimeZone": null,
+  "id": "1",
+  "lastUpdated": 1546955864840,
+  "name": "Test Project",
+  "organizationId": null,
+  "otpServers": null,
+  "useCustomOsmBounds": false,
+}
+`;
+
+exports[`manager > selectors > getFilteredStops should output blank array when no pattern data exists 1`] = `Array []`;
+
+exports[`manager > selectors > getFilteredStops should output data when pattern data exists 1`] = `
+Array [
+  Object {
+    "location_type": null,
+    "stop_code": "60020",
+    "stop_desc": null,
+    "stop_id": "20",
+    "stop_lat": 37.355056803,
+    "stop_lon": -121.945134661,
+    "stop_name": "EL CAMINO & LAFAYETTE",
+    "stop_url": null,
+    "wheelchair_boarding": null,
+    "zone_id": "1",
+  },
+  Object {
+    "location_type": null,
+    "stop_code": "65228",
+    "stop_desc": null,
+    "stop_id": "5228",
+    "stop_lat": 37.35339598,
+    "stop_lon": -121.937117102,
+    "stop_name": "SANTA CLARA CALTRAIN STATION",
+    "stop_url": null,
+    "wheelchair_boarding": null,
+    "zone_id": "1",
+  },
+]
+`;
+
+exports[`manager > selectors > getPatternData should output blank array when no pattern data exists 1`] = `Array []`;
+
+exports[`manager > selectors > getPatternData should output data when pattern data exists 1`] = `
+Array [
+  Object {
+    "numStops": 2,
+    "numTrips": 2,
+    "patternId": "248",
+    "patternName": "10 stops from 1ST & METRO @ LR STATION to SANTA CLARA CALTRAIN STATION (133 trips)",
+    "tripsPerHour": Array [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+    ],
+  },
+]
+`;
+
+exports[`manager > selectors > getRouteDetailsData should output blank array when no route data exists 1`] = `Array []`;
+
+exports[`manager > selectors > getRouteDetailsData should output data when route data exists 1`] = `
+Array [
+  Object {
+    "numPatterns": 1,
+    "numStops": 2,
+    "numTrips": 1,
+    "routeId": "10",
+    "routeName": "10 - SANTA CLARA TRANSIT- METRO AIRPORT",
+    "tripsPerHour": Array [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+    ],
+  },
+]
+`;
+
+exports[`manager > selectors > getTimetableData should get the data when data is available 1`] = `
+Object {
+  "columns": Array [
+    Object {
+      "children": "Trip ID",
+      "dataField": "tripId",
+      "hidden": true,
+      "isKey": true,
+      "row": "0",
+      "rowSpan": "2",
+      "width": "150",
+    },
+    Object {
+      "children": "Trip Headsign",
+      "dataField": "tripHeadsign",
+      "hidden": true,
+      "row": "0",
+      "rowSpan": "2",
+      "width": "150",
+    },
+    Object {
+      "children": "Trip Short Name",
+      "dataField": "tripShortName",
+      "hidden": true,
+      "row": "0",
+      "rowSpan": "2",
+      "width": "150",
+    },
+    Object {
+      "children": <span>
+        1ST & METRO @ LR STATION
+      </span>,
+      "colSpan": "2",
+      "csvHeader": "1ST & METRO @ LR STATION",
+      "dataField": undefined,
+      "dataFormat": [Function],
+      "formatExtraData": Array [
+        Array [
+          Object {
+            "count": 1,
+            "diff": NaN,
+          },
+          Object {
+            "count": 1,
+            "diff": 5400,
+          },
+        ],
+        Array [
+          Object {
+            "count": 2,
+            "diff": null,
+          },
+        ],
+      ],
+      "headerText": "1ST & METRO @ LR STATION",
+      "hidden": undefined,
+      "row": "0",
+      "stopId": "14",
+      "width": "170",
+    },
+    Object {
+      "children": "Arrive",
+      "csvHeader": "Arrive",
+      "dataField": "0-arrival",
+      "dataFormat": [Function],
+      "formatExtraData": Array [
+        Array [
+          Object {
+            "count": 1,
+            "diff": NaN,
+          },
+          Object {
+            "count": 1,
+            "diff": 5400,
+          },
+        ],
+        Array [
+          Object {
+            "count": 2,
+            "diff": null,
+          },
+        ],
+      ],
+      "hidden": undefined,
+      "row": "1",
+      "stopId": "14",
+      "width": "85",
+    },
+    Object {
+      "children": "Dwell",
+      "csvHeader": "Dwell",
+      "dataField": "0-dwell",
+      "hidden": undefined,
+      "row": "1",
+      "stopId": "14",
+      "width": "85",
+    },
+    Object {
+      "children": <span>
+        TECHNOLOGY 
+        <br />
+         METRO
+      </span>,
+      "colSpan": "2",
+      "csvHeader": "TECHNOLOGY & METRO",
+      "dataField": undefined,
+      "dataFormat": [Function],
+      "formatExtraData": Array [
+        Array [
+          Object {
+            "count": 1,
+            "diff": NaN,
+          },
+          Object {
+            "count": 1,
+            "diff": 5400,
+          },
+        ],
+        Array [
+          Object {
+            "count": 2,
+            "diff": null,
+          },
+        ],
+      ],
+      "headerText": "TECHNOLOGY & METRO",
+      "hidden": undefined,
+      "row": "0",
+      "stopId": "15",
+      "width": "170",
+    },
+    Object {
+      "children": "Arrive",
+      "csvHeader": "Arrive",
+      "dataField": "1-arrival",
+      "dataFormat": [Function],
+      "formatExtraData": Array [
+        Array [
+          Object {
+            "count": 1,
+            "diff": NaN,
+          },
+          Object {
+            "count": 1,
+            "diff": 5400,
+          },
+        ],
+        Array [
+          Object {
+            "count": 2,
+            "diff": null,
+          },
+        ],
+      ],
+      "hidden": undefined,
+      "row": "1",
+      "stopId": "15",
+      "width": "85",
+    },
+    Object {
+      "children": "Dwell",
+      "csvHeader": "Dwell",
+      "dataField": "1-dwell",
+      "hidden": undefined,
+      "row": "1",
+      "stopId": "15",
+      "width": "85",
+    },
+  ],
+  "rows": Array [
+    Object {
+      "0-arrival": 23580,
+      "0-departure": 23580,
+      "0-dwell": "--",
+      "1-arrival": null,
+      "1-departure": null,
+      "1-dwell": "--",
+      "tripHeadsign": "10 SANTA CLARA CALTRAIN VIA AIRPORT",
+      "tripId": "2369269",
+      "tripShortName": null,
+    },
+    Object {
+      "0-arrival": 28980,
+      "0-departure": 28980,
+      "0-dwell": "--",
+      "1-arrival": null,
+      "1-departure": null,
+      "1-dwell": "--",
+      "tripHeadsign": "10 SANTA CLARA CALTRAIN VIA AIRPORT",
+      "tripId": "2369292",
+      "tripShortName": null,
+    },
+  ],
+}
+`;
+
+exports[`manager > selectors > getTimetableData should get the data when data is available and show arrivals filter is set 1`] = `
+Object {
+  "columns": Array [
+    Object {
+      "children": "Trip ID",
+      "dataField": "tripId",
+      "hidden": true,
+      "isKey": true,
+      "row": "0",
+      "rowSpan": "2",
+      "width": "150",
+    },
+    Object {
+      "children": "Trip Headsign",
+      "dataField": "tripHeadsign",
+      "hidden": true,
+      "row": "0",
+      "rowSpan": "2",
+      "width": "150",
+    },
+    Object {
+      "children": "Trip Short Name",
+      "dataField": "tripShortName",
+      "hidden": true,
+      "row": "0",
+      "rowSpan": "2",
+      "width": "150",
+    },
+    Object {
+      "children": <span>
+        1ST & METRO @ LR STATION
+      </span>,
+      "colSpan": "2",
+      "csvHeader": "1ST & METRO @ LR STATION",
+      "dataField": undefined,
+      "dataFormat": [Function],
+      "formatExtraData": Array [
+        Array [
+          Object {
+            "count": 1,
+            "diff": NaN,
+          },
+          Object {
+            "count": 1,
+            "diff": 5400,
+          },
+        ],
+        Array [
+          Object {
+            "count": 2,
+            "diff": null,
+          },
+        ],
+      ],
+      "headerText": "1ST & METRO @ LR STATION",
+      "hidden": undefined,
+      "row": "0",
+      "stopId": "14",
+      "width": "170",
+    },
+    Object {
+      "children": "Arrive",
+      "csvHeader": "Arrive",
+      "dataField": "0-arrival",
+      "dataFormat": [Function],
+      "formatExtraData": Array [
+        Array [
+          Object {
+            "count": 1,
+            "diff": NaN,
+          },
+          Object {
+            "count": 1,
+            "diff": 5400,
+          },
+        ],
+        Array [
+          Object {
+            "count": 2,
+            "diff": null,
+          },
+        ],
+      ],
+      "hidden": undefined,
+      "row": "1",
+      "stopId": "14",
+      "width": "85",
+    },
+    Object {
+      "children": "Dwell",
+      "csvHeader": "Dwell",
+      "dataField": "0-dwell",
+      "hidden": undefined,
+      "row": "1",
+      "stopId": "14",
+      "width": "85",
+    },
+    Object {
+      "children": <span>
+        TECHNOLOGY 
+        <br />
+         METRO
+      </span>,
+      "colSpan": "2",
+      "csvHeader": "TECHNOLOGY & METRO",
+      "dataField": undefined,
+      "dataFormat": [Function],
+      "formatExtraData": Array [
+        Array [
+          Object {
+            "count": 1,
+            "diff": NaN,
+          },
+          Object {
+            "count": 1,
+            "diff": 5400,
+          },
+        ],
+        Array [
+          Object {
+            "count": 2,
+            "diff": null,
+          },
+        ],
+      ],
+      "headerText": "TECHNOLOGY & METRO",
+      "hidden": undefined,
+      "row": "0",
+      "stopId": "15",
+      "width": "170",
+    },
+    Object {
+      "children": "Arrive",
+      "csvHeader": "Arrive",
+      "dataField": "1-arrival",
+      "dataFormat": [Function],
+      "formatExtraData": Array [
+        Array [
+          Object {
+            "count": 1,
+            "diff": NaN,
+          },
+          Object {
+            "count": 1,
+            "diff": 5400,
+          },
+        ],
+        Array [
+          Object {
+            "count": 2,
+            "diff": null,
+          },
+        ],
+      ],
+      "hidden": undefined,
+      "row": "1",
+      "stopId": "15",
+      "width": "85",
+    },
+    Object {
+      "children": "Dwell",
+      "csvHeader": "Dwell",
+      "dataField": "1-dwell",
+      "hidden": undefined,
+      "row": "1",
+      "stopId": "15",
+      "width": "85",
+    },
+  ],
+  "rows": Array [
+    Object {
+      "0-arrival": 23580,
+      "0-departure": 23580,
+      "0-dwell": "--",
+      "1-arrival": null,
+      "1-departure": null,
+      "1-dwell": "--",
+      "tripHeadsign": "10 SANTA CLARA CALTRAIN VIA AIRPORT",
+      "tripId": "2369269",
+      "tripShortName": null,
+    },
+    Object {
+      "0-arrival": 28980,
+      "0-departure": 28980,
+      "0-dwell": "--",
+      "1-arrival": null,
+      "1-departure": null,
+      "1-dwell": "--",
+      "tripHeadsign": "10 SANTA CLARA CALTRAIN VIA AIRPORT",
+      "tripId": "2369292",
+      "tripShortName": null,
+    },
+  ],
+}
+`;
+
+exports[`manager > selectors > getTimetableData should get the data when data is available and timepoint filter is set 1`] = `
+Object {
+  "columns": Array [
+    Object {
+      "children": "Trip ID",
+      "dataField": "tripId",
+      "hidden": true,
+      "isKey": true,
+      "row": "0",
+      "rowSpan": "2",
+      "width": "150",
+    },
+    Object {
+      "children": "Trip Headsign",
+      "dataField": "tripHeadsign",
+      "hidden": true,
+      "row": "0",
+      "rowSpan": "2",
+      "width": "150",
+    },
+    Object {
+      "children": "Trip Short Name",
+      "dataField": "tripShortName",
+      "hidden": true,
+      "row": "0",
+      "rowSpan": "2",
+      "width": "150",
+    },
+    Object {
+      "children": <span>
+        1ST & METRO @ LR STATION
+      </span>,
+      "colSpan": "2",
+      "csvHeader": "1ST & METRO @ LR STATION",
+      "dataField": undefined,
+      "dataFormat": [Function],
+      "formatExtraData": Array [
+        Array [
+          Object {
+            "count": 1,
+            "diff": NaN,
+          },
+          Object {
+            "count": 1,
+            "diff": 5400,
+          },
+        ],
+        Array [
+          Object {
+            "count": 2,
+            "diff": null,
+          },
+        ],
+      ],
+      "headerText": "1ST & METRO @ LR STATION",
+      "hidden": false,
+      "row": "0",
+      "stopId": "14",
+      "width": "170",
+    },
+    Object {
+      "children": "Arrive",
+      "csvHeader": "Arrive",
+      "dataField": "0-arrival",
+      "dataFormat": [Function],
+      "formatExtraData": Array [
+        Array [
+          Object {
+            "count": 1,
+            "diff": NaN,
+          },
+          Object {
+            "count": 1,
+            "diff": 5400,
+          },
+        ],
+        Array [
+          Object {
+            "count": 2,
+            "diff": null,
+          },
+        ],
+      ],
+      "hidden": false,
+      "row": "1",
+      "stopId": "14",
+      "width": "85",
+    },
+    Object {
+      "children": "Dwell",
+      "csvHeader": "Dwell",
+      "dataField": "0-dwell",
+      "hidden": false,
+      "row": "1",
+      "stopId": "14",
+      "width": "85",
+    },
+    Object {
+      "children": <span>
+        TECHNOLOGY 
+        <br />
+         METRO
+      </span>,
+      "colSpan": "2",
+      "csvHeader": "TECHNOLOGY & METRO",
+      "dataField": undefined,
+      "dataFormat": [Function],
+      "formatExtraData": Array [
+        Array [
+          Object {
+            "count": 1,
+            "diff": NaN,
+          },
+          Object {
+            "count": 1,
+            "diff": 5400,
+          },
+        ],
+        Array [
+          Object {
+            "count": 2,
+            "diff": null,
+          },
+        ],
+      ],
+      "headerText": "TECHNOLOGY & METRO",
+      "hidden": true,
+      "row": "0",
+      "stopId": "15",
+      "width": "170",
+    },
+    Object {
+      "children": "Arrive",
+      "csvHeader": "Arrive",
+      "dataField": "1-arrival",
+      "dataFormat": [Function],
+      "formatExtraData": Array [
+        Array [
+          Object {
+            "count": 1,
+            "diff": NaN,
+          },
+          Object {
+            "count": 1,
+            "diff": 5400,
+          },
+        ],
+        Array [
+          Object {
+            "count": 2,
+            "diff": null,
+          },
+        ],
+      ],
+      "hidden": true,
+      "row": "1",
+      "stopId": "15",
+      "width": "85",
+    },
+    Object {
+      "children": "Dwell",
+      "csvHeader": "Dwell",
+      "dataField": "1-dwell",
+      "hidden": true,
+      "row": "1",
+      "stopId": "15",
+      "width": "85",
+    },
+  ],
+  "rows": Array [
+    Object {
+      "0-arrival": 23580,
+      "0-departure": 23580,
+      "0-dwell": "--",
+      "1-arrival": null,
+      "1-departure": null,
+      "1-dwell": "--",
+      "tripHeadsign": "10 SANTA CLARA CALTRAIN VIA AIRPORT",
+      "tripId": "2369269",
+      "tripShortName": null,
+    },
+    Object {
+      "0-arrival": 28980,
+      "0-departure": 28980,
+      "0-dwell": "--",
+      "1-arrival": null,
+      "1-departure": null,
+      "1-dwell": "--",
+      "tripHeadsign": "10 SANTA CLARA CALTRAIN VIA AIRPORT",
+      "tripId": "2369292",
+      "tripShortName": null,
+    },
+  ],
+}
+`;
+
+exports[`manager > selectors > getTimetableData should get the data when no data is fetched 1`] = `
+Object {
+  "columns": Array [],
+  "rows": Array [],
+}
+`;

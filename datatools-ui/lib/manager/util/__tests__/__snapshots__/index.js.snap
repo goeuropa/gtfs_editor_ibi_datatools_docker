@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`manager > util > index > feedSortOptions should sort alphabetically-asc 1`] = `
+Array [
+  "another test feed with a version that ends later",
+  "test feed with a version",
+  "test feed with no version",
+]
+`;
+
+exports[`manager > util > index > feedSortOptions should sort alphabetically-desc 1`] = `
+Array [
+  "test feed with no version",
+  "test feed with a version",
+  "another test feed with a version that ends later",
+]
+`;
+
+exports[`manager > util > index > feedSortOptions should sort endDate-asc 1`] = `
+Array [
+  "test feed with a version",
+  "another test feed with a version that ends later",
+  "test feed with no version",
+]
+`;
+
+exports[`manager > util > index > feedSortOptions should sort endDate-desc 1`] = `
+Array [
+  "another test feed with a version that ends later",
+  "test feed with a version",
+  "test feed with no version",
+]
+`;
+
+exports[`manager > util > index > feedSortOptions should sort lastUpdated-asc 1`] = `
+Array [
+  "test feed with a version",
+  "another test feed with a version that ends later",
+  "test feed with no version",
+]
+`;
+
+exports[`manager > util > index > feedSortOptions should sort lastUpdated-desc 1`] = `
+Array [
+  "another test feed with a version that ends later",
+  "test feed with a version",
+  "test feed with no version",
+]
+`;
+
+exports[`manager > util > index > feedSortOptions should sort numErrors-asc 1`] = `
+Array [
+  "test feed with a version",
+  "another test feed with a version that ends later",
+  "test feed with no version",
+]
+`;
+
+exports[`manager > util > index > feedSortOptions should sort numErrors-desc 1`] = `
+Array [
+  "another test feed with a version that ends later",
+  "test feed with a version",
+  "test feed with no version",
+]
+`;
+
+exports[`manager > util > index > feedSortOptions should sort startDate-asc 1`] = `
+Array [
+  "test feed with a version",
+  "another test feed with a version that ends later",
+  "test feed with no version",
+]
+`;
+
+exports[`manager > util > index > feedSortOptions should sort startDate-desc 1`] = `
+Array [
+  "another test feed with a version that ends later",
+  "test feed with a version",
+  "test feed with no version",
+]
+`;
+
+exports[`manager > util > index > parseBounds > invalid > should fail to parse invalid lat/lon coordinates 1`] = `
+Object {
+  "errors": Array [
+    "West value is invalid. Expected a value between 180 and -180, but found -200",
+    "East value is invalid. Expected a value between 180 and -180, but found 210",
+    "North value is invalid. Expected a value between 90 and -90, but found 120",
+    "South value is invalid. Expected a value between 90 and -90, but found -100",
+  ],
+  "valid": false,
+}
+`;
+
+exports[`manager > util > index > parseBounds > invalid > should fail to parse less than 3 values 1`] = `
+Object {
+  "errors": Array [
+    "Incorrect amount of values. Found 3, expected 4.",
+  ],
+  "valid": false,
+}
+`;
+
+exports[`manager > util > index > parseBounds > valid > should parse valid bounds 1`] = `
+Object {
+  "bounds": Object {
+    "east": -122.696827,
+    "north": 45.525433,
+    "south": 45.503841,
+    "west": -122.723842,
+  },
+  "valid": true,
+}
+`;

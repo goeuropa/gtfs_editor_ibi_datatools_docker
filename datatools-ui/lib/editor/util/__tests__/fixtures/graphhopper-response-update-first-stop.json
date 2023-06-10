@@ -1,0 +1,51 @@
+{
+  "hints": { "visited_nodes.average": "18.0", "visited_nodes.sum": "18" },
+  "info": {
+    "copyrights": ["GraphHopper", "OpenStreetMap contributors"],
+    "took": 1
+  },
+  "paths": [
+    {
+      "distance": 614.966,
+      "weight": 64.249833,
+      "time": 55023,
+      "transfers": 0,
+      "points_encoded": true,
+      "bbox": [-77.92553, 42.086499, -77.921839, 42.089254],
+      "points": "{`{_GpyrzM?oJBiABWVw@BKDiCCaAcP~@",
+      "instructions": [
+        {
+          "distance": 308.98,
+          "heading": 90.39,
+          "sign": 0,
+          "interval": [0, 7],
+          "text": "Continue onto Moonlight Drive",
+          "time": 39725,
+          "street_name": "Moonlight Drive"
+        },
+        {
+          "distance": 305.986,
+          "sign": -2,
+          "interval": [7, 8],
+          "text": "Turn left onto Stannards Road, NY 19",
+          "time": 15298,
+          "street_name": "Stannards Road, NY 19"
+        },
+        {
+          "distance": 0.0,
+          "sign": 4,
+          "last_heading": 354.6150385623691,
+          "interval": [8, 8],
+          "text": "Arrive at destination",
+          "time": 0,
+          "street_name": ""
+        }
+      ],
+      "legs": [],
+      "details": {},
+      "ascend": 3.107513427734375,
+      "descend": 3.8070068359375,
+      "snapped_waypoints": "{`{_GpyrzM}NaT"
+    }
+  ]
+}

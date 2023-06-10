@@ -1,0 +1,34 @@
+node_modules/
+.DS_Store
+dist
+*.log
+coverage*
+e2e-test-results
+tmp/
+.tags
+*.pid
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Configurations
+configurations/*
+!configurations/default
+!configurations/test
+!configurations/end-to-end
+dist
+assets
+
+# Secret config files
+env.yml
+env.yml-original
+.env
+!configurations/test/env.yml
+scripts/*client.json
+*.pem
+
+# Vs code settings
+.vscode/

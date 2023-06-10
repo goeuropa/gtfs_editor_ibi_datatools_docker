@@ -1,0 +1,63 @@
+name: CT Node.js CI
+
+on: [push]
+    
+jobs:
+  test-build-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2      
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: Install npm/yarn packages using cache
+        uses: bahmutov/npm-install@v1
+      - name: Lint code
+        run: yarn lint
+      - name: Lint messages
+        run: yarn lint-messages
+      - name: Run flow check
+        run: yarn flow
+      - name: Write .env file for Build        
+        run: |
+          touch configurations/default/env.yml
+          echo # Github created file >> configurations/default/env.yml
+          echo AUTH0_CLIENT_ID: ${{ secrets.AUTH0_CLIENT_ID }} >> configurations/default/env.yml
+          echo AUTH0_CONNECTION_NAME: ${{ secrets.AUTH0_CONNECTION_NAME }} >> configurations/default/env.yml
+          echo AUTH0_DOMAIN: ${{ secrets.AUTH0_DOMAIN }} >> configurations/default/env.yml   
+          echo GRAPH_HOPPER_KEY: ${{ secrets.GRAPH_HOPPER_KEY }} >> configurations/default/env.yml 
+          echo GRAPH_HOPPER_URL: ${{ secrets.GRAPH_HOPPER_URL }} >> configurations/default/env.yml 
+          echo MAPBOX_ACCESS_TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }} >> configurations/default/env.yml 
+          echo MAPBOX_ATTRIBUTION: '${{ secrets.MAPBOX_ATTRIBUTION }}' >> configurations/default/env.yml 
+      #- name: Build with minification
+      #  run: yarn run build -- --minify
+        
+      - name: Configure Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Log in to DockerHub
+        uses: docker/login-action@v1 
+        with:
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_AUTH }}     
+
+      - name: Create Docker image tag
+        id: docker-tags
+        run: |
+          echo "::set-output name=permanent-tag::v3-$(date +"%Y-%m-%dT%H.%M.%S")-${GITHUB_SHA:0:7}"
+
+      - name: build and push Docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          tags: |
+            mvanlaar/datatools-ui:latest            
+          # https://github.com/docker/build-push-action/blob/9472e9021074a3cb3279ba431598b8836d40433f/docs/advanced/cache.md#github-cache
+          # https://github.com/moby/buildkit#registry-push-image-and-cache-separately          
+          push: true
+      - name: Upload result for build
+        uses: actions/upload-artifact@v3
+        with:
+           name: datatools-ct
+           path: dist/

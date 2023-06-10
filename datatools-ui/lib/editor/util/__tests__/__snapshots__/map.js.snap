@@ -1,0 +1,991 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`editor > util > map > recalculateShape > deleting > should delete a point in the middle of the control points 1`] = `
+Object {
+  "coordinates": Array [
+    Array [
+      Array [
+        -77.922203,
+        42.086407,
+      ],
+      Array [
+        -77.92215494185281,
+        42.08925407008939,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92215494185281,
+        42.08925407008939,
+      ],
+      Array [
+        -77.92252574804179,
+        42.09235127309673,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92252574804179,
+        42.09235127309673,
+      ],
+      Array [
+        -77.92253,
+        42.09235,
+      ],
+      Array [
+        -77.92269,
+        42.09374,
+      ],
+      Array [
+        -77.92306,
+        42.09616,
+      ],
+    ],
+  ],
+  "dragId": undefined,
+  "updatedControlPoints": Array [
+    Object {
+      "distance": 0,
+      "id": "bv67",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.922203,
+            42.086407,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 0,
+        },
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapePtSequence": 0,
+      "stopId": "56c69e57-b007-4367-94ed-2c224662a2af",
+    },
+    Object {
+      "distance": 345.8645390523855,
+      "id": "y1e5",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92215494185281,
+            42.08925407008939,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 1,
+        },
+        "type": "Feature",
+      },
+      "pointType": 1,
+      "shapePtSequence": 1,
+    },
+    Object {
+      "distance": 691.729078104771,
+      "id": "fyz2",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92252574804179,
+            42.09235127309673,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 2,
+        },
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapePtSequence": 2,
+      "stopId": "a9c9cd55-ca3f-4ce7-9a93-96f2f4eaf089",
+    },
+    Object {
+      "distance": 1118.1829618006304,
+      "id": "1gwo",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92305462145765,
+            42.096168018547736,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 4,
+        },
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapeDistTraveled": NaN,
+      "shapePtSequence": NaN,
+      "stopId": "5b6afe4d-f4f2-43f3-810e-91749420af53",
+    },
+  ],
+}
+`;
+
+exports[`editor > util > map > recalculateShape > deleting > should delete the first stop 1`] = `
+Object {
+  "coordinates": Array [
+    Array [
+      Array [
+        -77.92252574804179,
+        42.09235127309673,
+      ],
+      Array [
+        -77.92276015989871,
+        42.09426187381858,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92276015989871,
+        42.09426187381858,
+      ],
+      Array [
+        -77.92305462145765,
+        42.096168018547736,
+      ],
+    ],
+  ],
+  "dragId": undefined,
+  "updatedControlPoints": Array [
+    Object {
+      "distance": 0,
+      "id": "fyz2",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92252574804179,
+            42.09235127309673,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 2,
+        },
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapeDistTraveled": NaN,
+      "shapePtSequence": 1,
+      "stopId": "a9c9cd55-ca3f-4ce7-9a93-96f2f4eaf089",
+    },
+    Object {
+      "distance": 213.4093278296342,
+      "id": "0cj3",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92276015989871,
+            42.09426187381858,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 3,
+        },
+        "type": "Feature",
+      },
+      "pointType": 1,
+      "shapeDistTraveled": NaN,
+      "shapePtSequence": 2,
+    },
+    Object {
+      "distance": 426.81865565926853,
+      "id": "1gwo",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92305462145765,
+            42.096168018547736,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 4,
+        },
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapeDistTraveled": NaN,
+      "shapePtSequence": 3,
+      "stopId": "5b6afe4d-f4f2-43f3-810e-91749420af53",
+    },
+  ],
+}
+`;
+
+exports[`editor > util > map > recalculateShape > deleting > should delete the last stop 1`] = `
+Object {
+  "coordinates": Array [
+    Array [
+      Array [
+        -77.922203,
+        42.086407,
+      ],
+      Array [
+        -77.92215494185281,
+        42.08925407008939,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92215494185281,
+        42.08925407008939,
+      ],
+      Array [
+        -77.92252574804179,
+        42.09235127309673,
+      ],
+    ],
+  ],
+  "dragId": undefined,
+  "updatedControlPoints": Array [
+    Object {
+      "distance": 0,
+      "id": "bv67",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.922203,
+            42.086407,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 0,
+        },
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapePtSequence": 0,
+      "stopId": "56c69e57-b007-4367-94ed-2c224662a2af",
+    },
+    Object {
+      "distance": 345.8645390523855,
+      "id": "y1e5",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92215494185281,
+            42.08925407008939,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 1,
+        },
+        "type": "Feature",
+      },
+      "pointType": 1,
+      "shapePtSequence": 1,
+    },
+    Object {
+      "distance": 691.729078104771,
+      "id": "fyz2",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92252574804179,
+            42.09235127309673,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 2,
+        },
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapePtSequence": 2,
+      "stopId": "a9c9cd55-ca3f-4ce7-9a93-96f2f4eaf089",
+    },
+  ],
+}
+`;
+
+exports[`editor > util > map > recalculateShape > deleting > should delete the last stop when there are control points after the last stop 1`] = `
+Object {
+  "coordinates": Array [
+    Array [
+      Array [
+        -77.922203,
+        42.086407,
+      ],
+      Array [
+        -77.92215494185281,
+        42.08925407008939,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92215494185281,
+        42.08925407008939,
+      ],
+      Array [
+        -77.92252574804179,
+        42.09235127309673,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92252574804179,
+        42.09235127309673,
+      ],
+      Array [
+        -77.92276015989871,
+        42.09426187381858,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92276015989871,
+        42.09426187381858,
+      ],
+      Array [
+        -77.92305462145765,
+        42.096168018547736,
+      ],
+    ],
+  ],
+  "updatedControlPoints": Array [
+    Object {
+      "distance": 0,
+      "id": "bv67",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.922203,
+            42.086407,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapePtSequence": 0,
+      "stopId": "56c69e57-b007-4367-94ed-2c224662a2af",
+    },
+    Object {
+      "distance": 345.8645390523855,
+      "id": "y1e5",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92215494185281,
+            42.08925407008939,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "pointType": 1,
+      "shapePtSequence": 1,
+    },
+    Object {
+      "distance": 691.729078104771,
+      "id": "fyz2",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92252574804179,
+            42.09235127309673,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "pointType": 1,
+      "shapePtSequence": 2,
+      "stopId": undefined,
+    },
+    Object {
+      "distance": 905.1384059344052,
+      "id": "0cj3",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92276015989871,
+            42.09426187381858,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapePtSequence": 3,
+    },
+    Object {
+      "distance": 1118.5477337640395,
+      "id": "1gwo",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92305462145765,
+            42.096168018547736,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapePtSequence": 4,
+      "stopId": "5b6afe4d-f4f2-43f3-810e-91749420af53",
+    },
+    Object {
+      "distance": 1247.47773376,
+      "id": "ab3k",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92185187339783,
+            42.08535651765607,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "pointType": 1,
+      "shapePtSequence": 5,
+    },
+  ],
+}
+`;
+
+exports[`editor > util > map > recalculateShape > updating > should update a point in the middle of the control points 1`] = `
+Object {
+  "coordinates": Array [
+    Array [
+      Array [
+        -77.922203,
+        42.086407,
+      ],
+      Array [
+        -77.92215494185281,
+        42.08925407008939,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92215494185281,
+        42.08925407008939,
+      ],
+      Array [
+        -77.92252574804179,
+        42.09235127309673,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92252574804179,
+        42.09235127309673,
+      ],
+      Array [
+        -77.92253,
+        42.09235,
+      ],
+      Array [
+        -77.92251,
+        42.0922,
+      ],
+      Array [
+        -77.92264,
+        42.09218,
+      ],
+      Array [
+        -77.92374,
+        42.09218,
+      ],
+      Array [
+        -77.92374975804022,
+        42.091818952512064,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92374975804022,
+        42.091818952512064,
+      ],
+      Array [
+        -77.92375,
+        42.09181,
+      ],
+      Array [
+        -77.92374,
+        42.09218,
+      ],
+      Array [
+        -77.92264,
+        42.09218,
+      ],
+      Array [
+        -77.92251,
+        42.0922,
+      ],
+      Array [
+        -77.92269,
+        42.09374,
+      ],
+      Array [
+        -77.92306,
+        42.09616,
+      ],
+    ],
+  ],
+  "dragId": undefined,
+  "updatedControlPoints": Array [
+    Object {
+      "distance": 0,
+      "id": "bv67",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.922203,
+            42.086407,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 0,
+        },
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapePtSequence": 0,
+      "stopId": "56c69e57-b007-4367-94ed-2c224662a2af",
+    },
+    Object {
+      "distance": 345.8645390523855,
+      "id": "y1e5",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92215494185281,
+            42.08925407008939,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 1,
+        },
+        "type": "Feature",
+      },
+      "pointType": 1,
+      "shapePtSequence": 1,
+    },
+    Object {
+      "distance": 691.729078104771,
+      "id": "fyz2",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92252574804179,
+            42.09235127309673,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 2,
+        },
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapePtSequence": 2,
+      "stopId": "a9c9cd55-ca3f-4ce7-9a93-96f2f4eaf089",
+    },
+    Object {
+      "distance": 905.1384059344052,
+      "id": "0cj3",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92382,
+            42.09182,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "pointType": 1,
+      "shapePtSequence": 3,
+    },
+    Object {
+      "distance": 1437.544930172152,
+      "id": "1gwo",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92305462145765,
+            42.096168018547736,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 4,
+        },
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapeDistTraveled": NaN,
+      "shapePtSequence": NaN,
+      "stopId": "5b6afe4d-f4f2-43f3-810e-91749420af53",
+    },
+  ],
+}
+`;
+
+exports[`editor > util > map > recalculateShape > updating > should update the first stop 1`] = `
+Object {
+  "coordinates": Array [
+    Array [
+      Array [
+        -77.92553,
+        42.08666,
+      ],
+      Array [
+        -77.92553,
+        42.0867,
+      ],
+      Array [
+        -77.92369,
+        42.0867,
+      ],
+      Array [
+        -77.92332,
+        42.08668,
+      ],
+      Array [
+        -77.9232,
+        42.08666,
+      ],
+      Array [
+        -77.92292,
+        42.08654,
+      ],
+      Array [
+        -77.92286,
+        42.08652,
+      ],
+      Array [
+        -77.92217,
+        42.08649,
+      ],
+      Array [
+        -77.92184,
+        42.08651,
+      ],
+      Array [
+        -77.92216,
+        42.08925,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92215494185281,
+        42.08925407008939,
+      ],
+      Array [
+        -77.92252574804179,
+        42.09235127309673,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92252574804179,
+        42.09235127309673,
+      ],
+      Array [
+        -77.92276015989871,
+        42.09426187381858,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92276015989871,
+        42.09426187381858,
+      ],
+      Array [
+        -77.92305462145765,
+        42.096168018547736,
+      ],
+    ],
+  ],
+  "dragId": undefined,
+  "updatedControlPoints": Array [
+    Object {
+      "distance": 0,
+      "id": "bv67",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92553,
+            42.08666,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapePtSequence": 0,
+      "stopId": "56c69e57-b007-4367-94ed-2c224662a2af",
+    },
+    Object {
+      "distance": 619.530652509,
+      "id": "y1e5",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92215494185281,
+            42.08925407008939,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 1,
+        },
+        "type": "Feature",
+      },
+      "pointType": 1,
+      "shapeDistTraveled": NaN,
+      "shapePtSequence": NaN,
+    },
+    Object {
+      "distance": 965.3951915613854,
+      "id": "fyz2",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92252574804179,
+            42.09235127309673,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 2,
+        },
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapeDistTraveled": NaN,
+      "shapePtSequence": NaN,
+      "stopId": "a9c9cd55-ca3f-4ce7-9a93-96f2f4eaf089",
+    },
+    Object {
+      "distance": 1178.8045193910198,
+      "id": "0cj3",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92276015989871,
+            42.09426187381858,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 3,
+        },
+        "type": "Feature",
+      },
+      "pointType": 1,
+      "shapeDistTraveled": NaN,
+      "shapePtSequence": NaN,
+    },
+    Object {
+      "distance": 1392.213847220654,
+      "id": "1gwo",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92305462145765,
+            42.096168018547736,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 4,
+        },
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapeDistTraveled": NaN,
+      "shapePtSequence": NaN,
+      "stopId": "5b6afe4d-f4f2-43f3-810e-91749420af53",
+    },
+  ],
+}
+`;
+
+exports[`editor > util > map > recalculateShape > updating > should update the last stop 1`] = `
+Object {
+  "coordinates": Array [
+    Array [
+      Array [
+        -77.922203,
+        42.086407,
+      ],
+      Array [
+        -77.92215494185281,
+        42.08925407008939,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92215494185281,
+        42.08925407008939,
+      ],
+      Array [
+        -77.92252574804179,
+        42.09235127309673,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92252574804179,
+        42.09235127309673,
+      ],
+      Array [
+        -77.92276015989871,
+        42.09426187381858,
+      ],
+    ],
+    Array [
+      Array [
+        -77.92276015989871,
+        42.09426187381858,
+      ],
+      Array [
+        -77.92276,
+        42.09426,
+      ],
+      Array [
+        -77.92311,
+        42.09647,
+      ],
+      Array [
+        -77.92323,
+        42.09698,
+      ],
+      Array [
+        -77.92335,
+        42.09735,
+      ],
+      Array [
+        -77.92364,
+        42.09798,
+      ],
+    ],
+  ],
+  "dragId": undefined,
+  "updatedControlPoints": Array [
+    Object {
+      "distance": 0,
+      "id": "bv67",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.922203,
+            42.086407,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 0,
+        },
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapePtSequence": 0,
+      "stopId": "56c69e57-b007-4367-94ed-2c224662a2af",
+    },
+    Object {
+      "distance": 345.8645390523855,
+      "id": "y1e5",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92215494185281,
+            42.08925407008939,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 1,
+        },
+        "type": "Feature",
+      },
+      "pointType": 1,
+      "shapePtSequence": 1,
+    },
+    Object {
+      "distance": 691.729078104771,
+      "id": "fyz2",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92252574804179,
+            42.09235127309673,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 2,
+        },
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapePtSequence": 2,
+      "stopId": "a9c9cd55-ca3f-4ce7-9a93-96f2f4eaf089",
+    },
+    Object {
+      "distance": 905.1384059344052,
+      "id": "0cj3",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92276015989871,
+            42.09426187381858,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "index": 3,
+        },
+        "type": "Feature",
+      },
+      "pointType": 1,
+      "shapePtSequence": 3,
+    },
+    Object {
+      "distance": 1118.5477337640395,
+      "id": "1gwo",
+      "point": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -77.92262,
+            42.09828,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "pointType": 2,
+      "shapePtSequence": 4,
+      "stopId": "5b6afe4d-f4f2-43f3-810e-91749420af53",
+    },
+  ],
+}
+`;
