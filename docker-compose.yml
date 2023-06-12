@@ -21,7 +21,7 @@ services:
     depends_on:
       - datatools-server
     ports:
-      - "9966:9966"
+      - "8089:80"
 
   datatools-server:
     container_name: datatools-server
@@ -48,17 +48,17 @@ services:
       - "127.0.0.1:27117:27117"
     command: mongod --dbpath /data/db --nojournal --oplogSize 16 --noauth --port 27117
 
-  datatools-nginx:
-    restart: always
-    container_name: datatools-nginx
-    build: ./nginx/
-    networks:
-      - napote
-    links:
-      - datatools-server
-      - datatools-ui
-    ports:
-      - "8888:8081"
+#  datatools-nginx:
+#    restart: always
+#    container_name: datatools-nginx
+#    build: ./nginx/
+#    networks:
+#      - napote
+#   links:
+#      - datatools-server
+#      - datatools-ui
+#    ports:
+#      - "8888:8081"
 
   datatools-postgis:
     container_name: datatools-postgis
