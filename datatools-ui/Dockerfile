@@ -15,7 +15,7 @@ RUN npm i -g serve
 #RUN git clone -b 'dev' --single-branch https://github.com/wkulesza/datatools-ui.git /opt/datatools-ui
 
 
-
+#devmerge
 ADD "https://www.random.org/cgi-bin/randbyte?nbytes=10&format=h" skipcache
 RUN git clone -b 'devmerge' https://github.com/goeuropa/datatools-ui.git /opt/datatools-ui
 
@@ -46,7 +46,7 @@ RUN yarn run build -- --minify
 add . / 
 FROM jitesoft/lighttpd:latest
 
-EXPOSE 4000
+EXPOSE 8089
 #ssl
 # Copy your SSL certificate and key
 COPY config/cert.pem /etc/lighttpd/ssl.crt
