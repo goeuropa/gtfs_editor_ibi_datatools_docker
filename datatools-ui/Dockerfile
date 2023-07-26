@@ -46,7 +46,7 @@ RUN yarn run build -- --minify
 add . / 
 FROM jitesoft/lighttpd:latest
 
-EXPOSE 8089
+EXPOSE 8888
 #ssl
 # Copy your SSL certificate and key
 COPY config/cert.pem /etc/lighttpd/ssl.crt
