@@ -1,0 +1,12 @@
+img[alt=screenshot] { width: 100%; }
+
+/*Ignore first heading in page in TOC list*/
+li.toctree-l3:first-child {
+    display: none;
+}
+
+.img-center {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}

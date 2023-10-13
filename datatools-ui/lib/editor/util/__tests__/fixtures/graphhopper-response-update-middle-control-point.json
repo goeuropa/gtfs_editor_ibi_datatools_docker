@@ -1,0 +1,93 @@
+{
+  "hints": { "visited_nodes.average": "15.0", "visited_nodes.sum": "30" },
+  "info": {
+    "copyrights": ["GraphHopper", "OpenStreetMap contributors"],
+    "took": 1
+  },
+  "paths": [
+    {
+      "distance": 744.052,
+      "weight": 70.660164,
+      "time": 59495,
+      "transfers": 0,
+      "points_encoded": true,
+      "bbox": [-77.92375, 42.091819, -77.922509, 42.096168],
+      "points": "ed|_GxfrzM\\CBX?zEhA@iAA?{ECYsHb@cNhA",
+      "instructions": [
+        {
+          "distance": 16.785,
+          "heading": 175.28,
+          "sign": 0,
+          "interval": [0, 1],
+          "text": "Continue onto Stannards Road, NY 19",
+          "time": 839,
+          "street_name": "Stannards Road, NY 19"
+        },
+        {
+          "distance": 101.478,
+          "sign": 2,
+          "interval": [1, 3],
+          "text": "Turn right",
+          "time": 13047,
+          "street_name": ""
+        },
+        {
+          "distance": 40.411,
+          "sign": -2,
+          "interval": [3, 4],
+          "text": "Turn left",
+          "time": 5195,
+          "street_name": ""
+        },
+        {
+          "distance": 0.0,
+          "sign": 5,
+          "last_heading": 181.49584076359088,
+          "interval": [4, 4],
+          "text": "Waypoint 1",
+          "time": 0,
+          "street_name": ""
+        },
+        {
+          "distance": 40.411,
+          "heading": 1.5,
+          "sign": -98,
+          "interval": [4, 5],
+          "text": "Make a U-turn",
+          "time": 5195,
+          "street_name": ""
+        },
+        {
+          "distance": 101.478,
+          "sign": 2,
+          "interval": [5, 7],
+          "text": "Turn right",
+          "time": 13047,
+          "street_name": ""
+        },
+        {
+          "distance": 443.489,
+          "sign": -2,
+          "interval": [7, 9],
+          "text": "Turn left onto Stannards Road, NY 19",
+          "time": 22172,
+          "street_name": "Stannards Road, NY 19"
+        },
+        {
+          "distance": 0.0,
+          "sign": 4,
+          "last_heading": 353.3201539453734,
+          "interval": [9, 9],
+          "text": "Arrive at destination",
+          "time": 0,
+          "street_name": ""
+        }
+      ],
+      "legs": [],
+      "details": {},
+      "ascend": 6.2185211181640625,
+      "descend": 3.70001220703125,
+      "snapped_waypoints": "ed|_GxfrzMjBrFeZiC"
+    }
+  ]
+}

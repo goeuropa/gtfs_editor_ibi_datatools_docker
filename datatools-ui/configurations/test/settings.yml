@@ -1,0 +1,35 @@
+# Unit tests must run without the server config, so this config file contains
+# configuration information that would otherwise be defined within the server.yml
+# file in datatools-server.
+application:
+  active_project: project-id
+  changelog_url: 'https://changelog.example.com'
+  data:
+    gtfs_s3_bucket: bucket-name
+    use_s3_storage: false
+  date_format: MMM Do YYYY
+  docs_url: 'http://docs.example.com'
+  logo: 'http://example.com/data_manager.png'
+  notifications_enabled: false
+  profileRefreshTime: -1
+  support_email: support@example.com
+  title: Data Manager
+entries:
+  - 'lib/main.js:dist/index.js'
+  - 'lib/index.css:dist/index.css'
+extensions:
+  transitfeeds:
+    enabled: false
+  transitland:
+    enabled: false
+modules:
+  deployment:
+    enabled: true
+  editor:
+    enabled: true
+  enterprise:
+    enabled: true
+  user_admin:
+    enabled: true
+  validator:
+    enabled: true

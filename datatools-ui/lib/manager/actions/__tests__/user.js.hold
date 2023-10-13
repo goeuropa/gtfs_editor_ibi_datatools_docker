@@ -1,0 +1,18 @@
+import {receiveTokenAndProfile} from '../user'
+
+describe('manager > actions > user > ', () => {
+  describe('receiveTokenAndProfile', () => {
+    it('should receive token and profile', () => {
+      expect(
+        receiveTokenAndProfile({
+          token: 'fake-token',
+          profile: {
+            app_metadata: {
+              datatools: []
+            }
+          }
+        })
+      ).toMatchSnapshot()
+    })
+  })
+})
