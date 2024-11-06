@@ -29,21 +29,21 @@ ADD ./config/*.yml /config/
 
 #RUN yarn
 
-COPY /config/settings.yml /opt/datatools-ui/configurations/default/settings.yml
+COPY /configurations/default/ /opt/datatools-ui/configurations/default/
 COPY /config/auth.pem /opt/datatools-ui/configurations/default/auth.pem
-COPY /config/env.yml /opt/datatools-ui/configurations/default/env.yml
 
 #CMD envsubst < /config/env.yml > /opt/datatools-ui/configurations/default/env.yml && \
-#    $(npm bin)/mastarm build --env production 
-#CMD npm mastarm build --env production 
+#    $(npm bin)/mastarm build --env production
+#CMD npm mastarm build --env production
 #RUN npm install
 #RUN npm cache clean --force
 #RUN npm run build --env production
 #RUN yarn build
 RUN yarn install
+COPY ./lib/mastarm_css/css-transform.js /opt/datatools-ui/node_modules/mastarm/lib/css-transform.js
 RUN yarn run build -- --minify
 
-add . / 
+add . /
 FROM jitesoft/lighttpd:latest
 
 EXPOSE 8888
