@@ -40,7 +40,7 @@ COPY /config/auth.pem /opt/datatools-ui/configurations/default/auth.pem
 #RUN npm run build --env production
 #RUN yarn build
 RUN yarn install
-COPY ./lib/mastarm_css/css-transform.js /opt/datatools-ui/node_modules/mastarm/lib/css-transform.js
+COPY /lib/mastarm_css/css-transform.js /opt/datatools-ui/node_modules/mastarm/lib/css-transform.js
 RUN yarn run build -- --minify
 
 add . /
